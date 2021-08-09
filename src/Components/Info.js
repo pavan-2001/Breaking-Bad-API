@@ -7,13 +7,12 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 export default function Info() {
     let {characterName} = useParams();
     characterName = characterName.replace(':', '');
-    let temp = characterName;
     const [characterArray, setCharacterArray] = useState([]);
     const [quoteArray, setQuoteArray] = useState([]);
-    let count = 0;
+    let countRef = useRef(0);
 
     useEffect(() => {
-        if(count === 0) {
+        if(countRef.current === 0) {
             NameBasedSearch(characterName.replace(/\s/g, '+')).then(response => {
                 setCharacterArray(response);
             }).catch(error => {
@@ -24,12 +23,9 @@ export default function Info() {
             }).catch(error => {
                 console.log(error);
             });
-            const temp2 = characterArray.filter((character) => {
-                return character.name === temp;
-            });
-            count = count + 1;
+            countRef.current++;
         }
-    }, [count]);
+    });
 
     return (
         <div>

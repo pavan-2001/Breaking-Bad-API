@@ -1,16 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "@material-tailwind/react/Navbar";
 import NavbarContainer from "@material-tailwind/react/NavbarContainer";
 import NavbarWrapper from "@material-tailwind/react/NavbarWrapper";
 import NavbarBrand from "@material-tailwind/react/NavbarBrand";
-import NavbarToggler from "@material-tailwind/react/NavbarToggler";
 import NavbarCollapse from "@material-tailwind/react/NavbarCollapse";
 import Nav from "@material-tailwind/react/Nav";
-import NavItem from "@material-tailwind/react/NavItem";
-import NavLink from "@material-tailwind/react/NavLink";
 import NavbarInput from "@material-tailwind/react/NavbarInput";
-import Icon from "@material-tailwind/react/Icon";
-import { Typography } from "@material-ui/core";
 
 export default class Layout extends React.Component {
   constructor(props) {
@@ -29,7 +24,7 @@ export default class Layout extends React.Component {
             <NavbarContainer>
                 <NavbarWrapper>
                     <NavbarBrand>
-                        <div className="text-lg font-weight-bold font-lg font-family-Abril-Fatface">
+                        <div className="text-lg font-weight-bold font-lg">
                             Breaking Bad
                         </div>
                     </NavbarBrand>
