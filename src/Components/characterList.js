@@ -18,25 +18,25 @@ export default class CharacterList extends React.Component {
                                     <tr>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-lg font-bold text-gray-600 tracking-wider"
                                         >
-                                            Character Name
+                                            Character's
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-lg font-bold text-gray-600 tracking-wider"
                                         >
                                             Occupation
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-lg font-bold text-gray-600 tracking-wider"
                                         >
                                             DOB
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-lg font-bold text-gray-600 tracking-wider"
                                         >
                                             Status
                                         </th>
@@ -53,7 +53,7 @@ export default class CharacterList extends React.Component {
                                                         </Link>
                                                     </div>
                                                     <div className="ml-4">
-                                                        <div className="text-sm font-medium text-gray-900">{character.name}</div>
+                                                        <div className="text-md font-bold text-gray-900">{character.name}</div>
                                                         <div className="text-sm text-gray-500">{character.portrayed}</div>
                                                     </div>
                                                 </div>

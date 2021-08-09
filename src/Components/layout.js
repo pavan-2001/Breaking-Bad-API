@@ -29,7 +29,9 @@ export default class Layout extends React.Component {
             <NavbarContainer>
                 <NavbarWrapper>
                     <NavbarBrand>
-                        <Typography type="h1">Breaking Bad</Typography>
+                        <div className="text-lg font-weight-bold font-lg font-family-Abril-Fatface">
+                            Breaking Bad
+                        </div>
                     </NavbarBrand>
                 </NavbarWrapper>
     

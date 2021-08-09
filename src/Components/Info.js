@@ -43,7 +43,7 @@ export default function Info() {
                                 <img className="h-45 w-45 rounded-full" src={character.img} alt="" />
                             </div>
                             <div className="ml-25">
-                                <div className="text-xl font-large text-black-900">{character.name}</div>
+                                <div className="text-xl font-bold text-black-900">{character.name}</div>
                                 <div className="text-xl text-gray-500">{character.portrayed}</div>
                             </div>
                         </div>
