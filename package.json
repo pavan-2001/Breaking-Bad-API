@@ -1,7 +1,7 @@
 {
   "name": "breakingbadassignment",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@headlessui/react": "^1.4.0",
@@ -23,7 +23,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": [

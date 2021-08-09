@@ -35,10 +35,10 @@ export default function Info() {
                 <div className="bg-white divide-y divide-gray-200">
                     <div className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
-                            <div className="flex h-44 w-44">
-                                <img className="h-45 w-45 rounded-full" src={character.img} alt="" />
+                            <div className="flex-shrink-0 h-60 w-60">
+                                <img className="h-40- w-40 rounded-full" src={character.img} alt="" />
                             </div>
-                            <div className="ml-25">
+                            <div className="ml-10">
                                 <div className="text-xl font-bold text-black-900">{character.name}</div>
                                 <div className="text-xl text-gray-500">{character.portrayed}</div>
                             </div>
@@ -54,11 +54,11 @@ export default function Info() {
                     <div className="text-sm text-gray-900"><div className=" py-2 font-bold">Status</div>{character.status ? character.status : "Not Known"}</div>
                     </div>
                     <div className="px-6 py-2 whitespace-nowrap">
-                    <div className="text-sm text-gray-900"><div className=" py-2 font-bold">Season Appearances</div>{character.appearance ? character.appearance.join(', ') : "Not Known"}</div>
+                    <div className="text-sm text-gray-900"><div className=" py-2 font-bold">Season Appearances</div>{character.appearance.length ? character.appearance.join(', ') : "Not Known"}</div>
                     </div>
                     <div>
                         {character.nickname ? <div className="px-6 py-2 whitespace-nowrap">
-                            <div className="text-sm text-gray-900"><div className=" py-2 font-bold">Nickname</div>{character.nickname ? character.nickname : "Not Known"}</div>
+                            <div className="text-sm text-gray-900"><div className=" py-2 font-bold">Nickname</div>{character.nickname}</div>
                             </div> :
                             null 
                         }

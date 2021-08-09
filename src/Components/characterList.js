@@ -41,14 +41,14 @@ export default class CharacterList extends React.Component {
                                 <tbody className="bg-white divide-y divide-gray-200">
                                     {this.props.characterArray.map( (character) => (
                                         <tr key={character.char_id}>
-                                            <td className="px-6 py-4 whitespace-nowrap">
+                                            <td className="px-10 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    <div className="flex-shrink-0 h-20 w-20">
+                                                    <div className="flex-shrink-0 h-30 w-30">
                                                         <Link to={`/:${character.name}`}>
                                                         <img className="h-20 w-20 rounded-full" src={character.img} alt="" />
                                                         </Link>
                                                     </div>
-                                                    <div className="ml-4">
+                                                    <div className="ml-10">
                                                         <div className="text-md font-bold text-gray-900">{character.name}</div>
                                                         <div className="text-sm text-gray-500">{character.portrayed}</div>
                                                     </div>

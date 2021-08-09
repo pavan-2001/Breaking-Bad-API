@@ -18,6 +18,8 @@ export default class Home extends React.Component {
     this.onChangeSearchText = this.onChangeSearchText.bind(this);
   }
 
+  
+
   componentDidMount() {
     ListOfAllCharacters().then( (response) => {
       this.setState({characterArray : response});
@@ -54,8 +56,7 @@ export default class Home extends React.Component {
           <Container maxWidth="lg">
             {
               this.state.characterArray.length ? 
-              <CharacterList characterArray={this.state.characterArray}/> : 
-              this.state.searchText === "" ? null : <p>Invalid Search</p>
+              <CharacterList characterArray={this.state.characterArray}/> : <div className="text-lg font-bold ">Refresh your page or invalid character name</div>
             }
           </Container>
         </React.Fragment>

@@ -32,7 +32,10 @@ export default class Layout extends React.Component {
     
                 <NavbarCollapse open={true}>
                     <Nav right>
-                    <NavbarInput type="text" placeholder="Search here" value={this.props.searchText} onChange={this.props.onChangeSearchText.bind(this)} />
+                    
+                    <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                            type="search" name="search" placeholder="Search" value={this.props.searchText} onChange={this.props.onChangeSearchText.bind(this)}>
+                    </input>
                     </Nav>
                 </NavbarCollapse>
             </NavbarContainer>
