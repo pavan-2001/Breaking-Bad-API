@@ -5,7 +5,6 @@ import NavbarWrapper from "@material-tailwind/react/NavbarWrapper";
 import NavbarBrand from "@material-tailwind/react/NavbarBrand";
 import NavbarCollapse from "@material-tailwind/react/NavbarCollapse";
 import Nav from "@material-tailwind/react/Nav";
-import NavbarInput from "@material-tailwind/react/NavbarInput";
 
 export default class Layout extends React.Component {
   constructor(props) {
